@@ -17,7 +17,7 @@ const posts = await Astro.glob('../posts/*.md');
                     <br>
                     {post.frontmatter.date}
                     <p>{post.frontmatter.excerpt}</p>
-                    <a class="btn" href={`/${post.frontmatter.slug}`}>Read More</a>
+                    <a class="btn" href={`/difusion/${post.frontmatter.slug}`}>Read More</a>
                 </Card>
             ))}
         </div>

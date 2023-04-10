@@ -19,5 +19,13 @@ const { Content, frontmatter } = Astro.props.post;
 ---
 
 <Layout title={frontmatter.title}>
-Hello
+    <section class="page-content">
+        <div class="container">
+            <Card>
+                <a class="btn" href="/difusion/blog">Go Back</a>
+                <h2>{frontmatter.title}</h2>
+                <Content />
+            </Card>
+        </div>
+    </section>
 </Layout>
