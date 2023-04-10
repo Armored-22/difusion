@@ -14,38 +14,56 @@ import Card from '../components/Card.astro';
 <!-- Showcase.astro Disabled -->
 <Showcase  showExtra={false} showBanner={false} showHeading={false} showText={true} />
 
-<!-- Features.astro -->
-<Features />
+<!-- Features enable/disable -->
+<!-- Features />
 
 <!-- Main Body HTML Start -->
 <section class="page-content">
 <div class="container">
 
 	<!-- Title -->	
-	<h2>Tab Box Demo</h2>
+	<h2>Welcome to DiFusion Design Lab</h2>
 
 	<!-- Body Text -->
 	<p>
-		Welcome to DiFusion Design Lab, your gateway to the world of AI-powered creativity! Here, we believe in the seamless fusion of human ingenuity and machine learning, unlocking new potentials in art, design, and everyday life. As you explore our website, you'll discover cutting-edge AI tools such as generative models like Stable Diffusion, language models like ChatGPT, and much more. Whether you're an aspiring artist, a professional looking to improve your workflow, or just someone who loves to learn, DiFusion Design Lab is your ultimate resource for harnessing the power of AI. Get ready to embark on a journey where the lines between the diatomic and the digital blur, and the future of creativity is shaped before your very eyes.
+		<strong>T</strong>he creative playground of Armored Atom, where cutting-edge AI-generated art and coding innovations come to life. As a passionate art enthusiast, tinkerer, and coding aficionado, Armored Atom leverages the latest in machine learning technology to create stunning works of art and develop innovative coding solutions that push the boundaries of what's possible.
+
+		At DiFusion Design Lab, Armored Atom invites you on a journey to explore the uncharted territories of creativity and technology, where human ingenuity and artificial intelligence come together to redefine the future of art and coding.
 	</p>
 
 	<!-- Tabs -->
-	<Tabs headings={['npm', 'pnpm', 'Yarn']} contents={['$ npm paste code here', '$ pnpm paste code here', '$ yarn paste code here']} />
+	<h3><mark>This site was built using Astro.</mark></h3>
+	<Tabs headings={[
 
-	<!-- Body Text -->
-	<h3>Filler Title Here</h3>
-	<p>
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
-	deserunt inventore ut voluptate, officia maiores repellat tenetur
-	praesentium omnis est ex tempora a necessitatibus reiciendis at et
-	dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
-	laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
-	iusto error molestias dolorum, necessitatibus labore?
-	</p>
+	'Why Astro?',
+
+	'Content-focused',
+
+	'Server-first',
+
+	'Easy to use',
+
+	'Fully-featured, but flexible',
+
+	]} contents={[
+
+	'Astro is an all-in-one web framework for building fast, content-focused websites. Why choose Astro over another web framework? Here are five core design principles to help explain why we built Astro, the problems that it exists to solve, and why Astro may be the best choice for your project or team.',
+
+	'Astro was designed for building content-rich websites. This includes most marketing sites, publishing sites, documentation sites, blogs, portfolios, and some ecommerce sites. By contrast, most modern web frameworks are designed for building web applications. These frameworks work best for building more complex, application-like experiences in the browser: logged-in admin dashboards, inboxes, social networks, todo lists, and even native-like applications like Figma and Ping. This is one of the most important differences to understand about Astro. Astro’s unique focus on content lets Astro make tradeoffs and deliver unmatched performance features that wouldn’t make sense for more application-focused web frameworks to implement.',
+
+	'Astro leverages server-side rendering over client-side rendering as much as possible. This is the same approach that traditional server-side frameworks -- PHP, WordPress, Laravel, Ruby on Rails, etc. -- have been using for decades. But you don’t need to learn a second server-side language to unlock it. With Astro, everything is still just HTML, CSS, and JavaScript (or TypeScript, if you prefer). This approach stands in contrast to other modern JavaScript web frameworks like Next.js, SvelteKit, Nuxt, Remix, and others. These frameworks require client-side rendering of your entire website and include server-side rendering mainly to address performance concerns. This approach has been dubbed the Single Page App (SPA), in contrast with Astro’s Multi Page App (MPA) approach.',
+
+	'Astro’s goal is to be accessible to every web developer. Astro was designed to feel familiar and approachable regardless of skill level or past experience with web development. We started by making sure that you could use any favorite UI component languages that you already know. React, Preact, Svelte, Vue, Solid, Lit, and several others are all supported for creating new UI components in an Astro project.',
+
+	'Astro is an all-in-one web framework that comes with everything you need to build a website. Astro includes a component syntax, file-based routing, asset handling, a build process, bundling, optimizations, data-fetching, and more. You can build great websites without ever reaching outside of Astro’s core feature set. If you need more control, you can extend Astro with over 100+ integrations like React, Svelte, Vue, Tailwind CSS, MDX, image optimizations, and more. Connect your favorite CMS or deploy to your favorite host with just a single command. Astro is UI-agnostic, meaning you can Bring Your Own UI Framework (BYOF). React, Preact, Solid, Svelte, Vue, and Lit are all officially supported in Astro. You can even mix and match different frameworks on the same page, making future migrations easier and preventing project lock-in to a single framework.'
+
+	]} />
+
+<Features />
 
 	<!-- Body Text using the Card Code -->
 	<Card dark={true}>
-	<h3>Use the <mark>Card Code</mark> to wrap a body of text into a stylized card.</h3>
+	<h3>Use the Card Code to wrap a body of text into a stylized card.</h3>
 	<p>
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
 	deserunt inventore ut voluptate, officia maiores repellat tenetur
