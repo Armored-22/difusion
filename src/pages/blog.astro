@@ -13,9 +13,9 @@ const posts = await Astro.glob('../posts/*.md');
             {posts.map(post => (
                 <Card dark={true}>
                     <h3>{post.frontmatter.title}</h3>
-                    {post.frontmatter.author}
-                    <br>
-                    {post.frontmatter.date}
+                    <div>
+                    Written by <strong>{post.frontmatter.author}</strong> on {new Date(post.frontmatter.date).toLocaleDateString()}    
+                    </div>
                     <p>{post.frontmatter.excerpt}</p>
                     <a class="btn" href={`/difusion/${post.frontmatter.slug}`}>Read More</a>
                 </Card>

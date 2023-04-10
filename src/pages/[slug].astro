@@ -21,9 +21,12 @@ const { Content, frontmatter } = Astro.props.post;
 <Layout title={frontmatter.title}>
     <section class="page-content">
         <div class="container">
-            <Card>
+            <Card dark={false}>
                 <h2>{frontmatter.title}</h2>
-                <Content />
+                <div>
+                    Written by <strong>{frontmatter.author}</strong> on {new Date(frontmatter.date).toLocaleDateString()}    
+                </div>
+            <Content />
                 <a class="btn" href="/difusion/blog">Go Back</a>
             </Card>
         </div>
