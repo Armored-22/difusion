@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Cards.astro";
+
+const posts = await Astro.glob('../posts/*.md');
+---
+
+<Layout title="Blog Spot">
+    <section class="page-content">
+        <div class="container">
+            {posts.map(post => (
+                <Card dark={true}>
+                    <h3>{post.frontmatter.title}</h3>
+                    {post.frontmatter.author}
+                    <br>
+                    {post.frontmatter.date}
+                    <p>{post.frontmatter.excerpt}</p>
+                </Card>
+            ))}
+        </div>
+    </section>
+</Layout>

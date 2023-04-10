@@ -1,0 +1,106 @@
+---
+import logos from '../images/framework-logos.png'
+import logosSmall from '../images/framework-logos-small.png'
+import banner from '../images/logo_1.gif'
+
+export interface Props {
+    heading?: string;
+    text?: string;
+    showExtra?: boolean;
+    showBanner?: boolean;
+    showHeading?: boolean;
+    showText?: boolean;
+}
+
+const { heading = "Empowering Creativity, Advancing Innovation", text = "Smaller Text Here", showExtra = false, showBanner = false, showHeading = false, showText = false } = Astro.props as Props;
+---
+
+    <section class="showcase">
+
+    <!-- Main Body Start -->
+    
+    <!-- Large Banner Start -->
+    {showBanner && <>
+    <div class="showcase-img">
+      <img class="showcase-img" src={banner} alt="" />
+    </div>
+    </>}
+    <!-- Large Banner End -->
+
+    <!-- ShowExtra = Scaling Banner Start -->
+    {showExtra && <>
+    <div class="showcase-img">
+      <img class="logos" src={logos} alt="" />
+      <img class="logos-small" src={logosSmall} alt="" />
+    </div>
+    </>}
+     <!-- ShowExtra = Scaling Banner End -->
+
+
+    <!-- Showcase Page Title & Text Start -->
+    <!-- Sets the default header for all pages, else;  -->
+    {showHeading && <>
+    <div class="showcase-text">
+      <h1>{heading}</h1>
+    </div>
+    </>}
+    <!-- Showcase Text End -->
+
+    <!-- Showcase Page Title & Text Start -->
+    <!-- Sets the default header for all pages, else;  -->
+    {showText && <>
+    <div class="showcase-text">
+      <p>{text}</p>
+    </div>
+    </>}
+    <!-- Showcase Text End -->
+
+
+  <!-- Main Body End -->
+  </section>
+
+  <style>
+    .showcase {
+  height: auto;
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
+  padding: 20px;
+}
+
+.showcase-blog {
+  min-height: 300px;
+}
+
+.showcase-text {
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.showcase h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.showcase-img {
+  text-align: center;
+}
+
+.showcase-img img {
+  border-radius: 10px;
+  margin: auto;
+}
+
+.showcase-demo {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+  </style>
