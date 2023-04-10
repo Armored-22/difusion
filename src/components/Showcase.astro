@@ -12,7 +12,7 @@ export interface Props {
     showText?: boolean;
 }
 
-const { heading = "The AI-generation, where human creativity meets machine learning.", text = "Empowering Creativity, Advancing Innovation.", showExtra = false, showBanner = false, showHeading = false, showText = false } = Astro.props as Props;
+const { heading = "The AI-generation, where human creativity meets machine learning. |  Empowering Creativity, Advancing Innovation.", text = "DiFusion Design Labs, where human creativity meets machine learning.", showExtra = false, showBanner = false, showHeading = false, showText = false } = Astro.props as Props;
 ---
 
     <section class="showcase">
@@ -72,7 +72,7 @@ const { heading = "The AI-generation, where human creativity meets machine learn
 }
 
 .showcase-text {
-  max-width: 500px;
+  max-width: 1000px;
   color: #fff;
   text-align: center;
   margin: 20px auto;
