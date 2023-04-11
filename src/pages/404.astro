@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="404 Error">
+    <Showcase  showExtra={false} showBanner={false} showHeading={true} showText={false} heading="404 Page Not Found" text="Smaller Text Here" />
+      <section class="page-content">
+          <div class="container">
+          <Card dark={false}>
+            <center>
+            <strong>Something didn't fuse together right...</strong>
+            </center>
+          </Card>
+
+          <center>
+            Let not this be a dead end! Check out these 3 tips below!
+
+            <ul>
+            <li>💬 Tip One [Link]</li>
+            <li>💬 Tip Two [Link]</li>
+            <li>💬 Tip Three [Link]</li>
+            </ul>
+            </center>
+         
+          </div>
+        </section>
+  </Layout>
