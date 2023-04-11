@@ -1,5 +1,6 @@
 ---
 import logo from '../images/gif_logo_3.gif'
+import '../styles/link_styles.css'
 ---
 
 <footer class="footer">
@@ -21,6 +22,21 @@ import logo from '../images/gif_logo_3.gif'
   </footer>
 
 <style>
+
+  /* START */
+a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;;
+}
+/* END */
+
   .footer {
     background: var(--color-primary);
     color: #fff;

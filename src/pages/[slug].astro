@@ -18,6 +18,8 @@ export async function getStaticPaths() {
 const { Content, frontmatter } = Astro.props.post;
 ---
 
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+
 <Layout title={frontmatter.title}>
     <section class="page-content">
         <div class="container">
